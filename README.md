@@ -6,7 +6,7 @@ standalone, find_package()-able library.
 
 ## Status
 
-Linux-only. C++17. Apache 2.0.
+Linux-only. C++17. MIT License.
 
 ## Build
 
@@ -34,4 +34,4 @@ Mirror:    https://github.com/Smit-tay/libuarm
 
 ## License
 
-Apache 2.0. See LICENSE.
+MIT. See LICENSE. Bundled serial/ subtree is BSD 2-Clause (William Woodall).

@@ -44,6 +44,9 @@ int main(int argc, char* argv[]) {
     }
     std::cout << "Connected.\n";
 
+    // wait for firmware boot after DTR reset - connect returns quickly.
+    std::this_thread::sleep_for(std::chrono::seconds(2));  
+    
     // Release all servos so the arm can be moved by hand.
     std::cout << "Detaching servos (passive/teach mode)...\n";
     arm.set_servo_detach(-1);  // -1 = all servos

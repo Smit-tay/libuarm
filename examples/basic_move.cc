@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
     // Move to waypoint A (above and in front, well within workspace).
     std::cout << "Moving to waypoint A (200, 0, 200)...\n";
     check("set_position A",
-          arm.set_position(200.0f, 0.0f, 200.0f,
+          arm.set_position(200.0f, 50.0f, 180.0f,
                            /*speed=*/5000, /*relative=*/false, /*wait=*/true));
 
     pos = arm.get_position();
